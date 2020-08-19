@@ -243,8 +243,6 @@ bool IsValidRomanNum(string romanNum) {
             isValid = true;
         }
     }
-
-
     return isValid;
 }
 
