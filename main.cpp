@@ -75,7 +75,7 @@ int GetUserInt(string prompt) {
     cin >> userInt;
     if (!cin) {
         cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cin.ignore(99999, '\n');
         cout << "You did not enter a valid integer, please try again." << endl;
     }
     return userInt;
