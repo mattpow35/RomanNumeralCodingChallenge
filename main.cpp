@@ -13,43 +13,43 @@ bool IsValidRomanNum(string romanNum);
 void TestRomanNumConverter();
 
 int main() {
-//    int userChoice;
-//
-//    cout << "WELCOME TO ROMAN NUMERAL CONVERTER" << endl;
-//
-//    DisplayOptions();
-//    userChoice = GetUserInt("Choose your option (enter 1, 2, or 3): ");
-//    while (userChoice != 3) {
-//        if (userChoice == 1) {
-//            //Get a string from user and check if it is valid. Then convert to modern number.
-//            string romanNumToConvert = GetUserString("Enter a valid roman numeral with no spaces: ");
-//            if (IsValidRomanNum(romanNumToConvert)) {
-//                ConvertRomanNumToModernNum(romanNumToConvert);
-//            }
-//            else {
-//                cout << "You entered an invalid roman numeral please try again." << endl;
-//            }
-//        }
-//        else if (userChoice == 2) {
-//            //Get an int from user, check if is valid and convert to roman numeral.
-//            int modernNumToConvert = GetUserInt("Enter a valid integer from 1 - 3999: ");
-//            if (modernNumToConvert > 0 && modernNumToConvert <= 3999) {
-//                ConvertModernNumToRomanNum(modernNumToConvert);
-//            }
-//            else {
-//                cout << "Your int is not within range of possible roman numerals, please try again." << endl;
-//            }
-//        }
-//        else {
-//            cout << "ERROR: Invalid option. Try again." << endl;
-//        }
-//        cout << endl;
-//        DisplayOptions();
-//        userChoice = GetUserInt("Choose your option (enter 1, 2, or 3): ");
-//    }
-//    cout << "Thank you for using ROMAN NUMERAL CONVERTER!" << endl;
+    int userChoice;
 
-    TestRomanNumConverter();
+    cout << "WELCOME TO ROMAN NUMERAL CONVERTER" << endl;
+
+    DisplayOptions();
+    userChoice = GetUserInt("Choose your option (enter 1, 2, or 3): ");
+    while (userChoice != 3) {
+        if (userChoice == 1) {
+            //Get a string from user and check if it is valid. Then convert to modern number.
+            string romanNumToConvert = GetUserString("Enter a valid roman numeral with no spaces: ");
+            if (IsValidRomanNum(romanNumToConvert)) {
+                ConvertRomanNumToModernNum(romanNumToConvert);
+            }
+            else {
+                cout << "You entered an invalid roman numeral please try again." << endl;
+            }
+        }
+        else if (userChoice == 2) {
+            //Get an int from user, check if is valid and convert to roman numeral.
+            int modernNumToConvert = GetUserInt("Enter a valid integer from 1 - 3999: ");
+            if (modernNumToConvert > 0 && modernNumToConvert <= 3999) {
+                ConvertModernNumToRomanNum(modernNumToConvert);
+            }
+            else {
+                cout << "Your int is not within range of possible roman numerals, please try again." << endl;
+            }
+        }
+        else {
+            cout << "ERROR: Invalid option. Try again." << endl;
+        }
+        cout << endl;
+        DisplayOptions();
+        userChoice = GetUserInt("Choose your option (enter 1, 2, or 3): ");
+    }
+    cout << "Thank you for using ROMAN NUMERAL CONVERTER!" << endl;
+
+    //TestRomanNumConverter();
 
     return 0;
 }
@@ -250,52 +250,52 @@ bool IsValidRomanNum(string romanNum) {
     return isValid;
 }
 
-//Function for testing the roman numeral converter.
-void TestRomanNumConverter() {
-    cout << "Testing roman numeral converter" << endl;
-
-    cout << " should be 0 ";
-    ConvertRomanNumToModernNum("");
-    cout << "I should be 1 ";
-    ConvertRomanNumToModernNum("I");
-    cout << "V should be 5 ";
-    ConvertRomanNumToModernNum("V");
-    cout << "XXVI should be 26 ";
-    ConvertRomanNumToModernNum("XXVI");
-    cout << "XXIX should be 29 ";
-    ConvertRomanNumToModernNum("XXIX");
-    cout << "XLV should be 45 ";
-    ConvertRomanNumToModernNum("XLV");
-    cout << "CLIX should be 159 ";
-    ConvertRomanNumToModernNum("CLIX");
-    cout << "MMMCMXCIX should be 3999 ";
-    ConvertRomanNumToModernNum("MMMCMXCIX");
-
-    cout << endl;
-    cout << "10 as a roman numeral should be X ";
-    ConvertModernNumToRomanNum(10);
-    cout << "15 as a roman numeral should be XV ";
-    ConvertModernNumToRomanNum(15);
-    cout << "21 as a roman numeral should be XXI ";
-    ConvertModernNumToRomanNum(21);
-    cout << "142 as a roman numeral should be CXLII ";
-    ConvertModernNumToRomanNum(142);
-    cout << "333 as a roman numeral should be  CCCXXXIII ";
-    ConvertModernNumToRomanNum(333);
-    cout << "2596 as a roman numeral should be MMDXCVI ";
-    ConvertModernNumToRomanNum(2596);
-    cout << "30  as a roman numeral should be XXX ";
-    ConvertModernNumToRomanNum(30);
-    cout << "37 as a roman numeral should be XXXVII ";
-    ConvertModernNumToRomanNum(37);
-    cout << "1238 as a roman numeral should be MCCXXXVIII ";
-    ConvertModernNumToRomanNum(1238);
-    cout << "1984 as a roman numeral should be MCMLXXXIV ";
-    ConvertModernNumToRomanNum(1984);
-    cout << "3999 as a roman numeral should be MMMCMXCIX ";
-    ConvertModernNumToRomanNum(3999);
-    cout << "0 as a roman numeral should be  ";
-    ConvertModernNumToRomanNum(0);
-}
+////Function for testing the roman numeral converter.
+//void TestRomanNumConverter() {
+//    cout << "Testing roman numeral converter" << endl;
+//
+//    cout << " should be 0 ";
+//    ConvertRomanNumToModernNum("");
+//    cout << "I should be 1 ";
+//    ConvertRomanNumToModernNum("I");
+//    cout << "V should be 5 ";
+//    ConvertRomanNumToModernNum("V");
+//    cout << "XXVI should be 26 ";
+//    ConvertRomanNumToModernNum("XXVI");
+//    cout << "XXIX should be 29 ";
+//    ConvertRomanNumToModernNum("XXIX");
+//    cout << "XLV should be 45 ";
+//    ConvertRomanNumToModernNum("XLV");
+//    cout << "CLIX should be 159 ";
+//    ConvertRomanNumToModernNum("CLIX");
+//    cout << "MMMCMXCIX should be 3999 ";
+//    ConvertRomanNumToModernNum("MMMCMXCIX");
+//
+//    cout << endl;
+//    cout << "10 as a roman numeral should be X ";
+//    ConvertModernNumToRomanNum(10);
+//    cout << "15 as a roman numeral should be XV ";
+//    ConvertModernNumToRomanNum(15);
+//    cout << "21 as a roman numeral should be XXI ";
+//    ConvertModernNumToRomanNum(21);
+//    cout << "142 as a roman numeral should be CXLII ";
+//    ConvertModernNumToRomanNum(142);
+//    cout << "333 as a roman numeral should be  CCCXXXIII ";
+//    ConvertModernNumToRomanNum(333);
+//    cout << "2596 as a roman numeral should be MMDXCVI ";
+//    ConvertModernNumToRomanNum(2596);
+//    cout << "30  as a roman numeral should be XXX ";
+//    ConvertModernNumToRomanNum(30);
+//    cout << "37 as a roman numeral should be XXXVII ";
+//    ConvertModernNumToRomanNum(37);
+//    cout << "1238 as a roman numeral should be MCCXXXVIII ";
+//    ConvertModernNumToRomanNum(1238);
+//    cout << "1984 as a roman numeral should be MCMLXXXIV ";
+//    ConvertModernNumToRomanNum(1984);
+//    cout << "3999 as a roman numeral should be MMMCMXCIX ";
+//    ConvertModernNumToRomanNum(3999);
+//    cout << "0 as a roman numeral should be  ";
+//    ConvertModernNumToRomanNum(0);
+//}
 
 
