@@ -37,7 +37,7 @@ int main() {
                 ConvertModernNumToRomanNum(modernNumToConvert);
             }
             else {
-                cout << "Your int is not within range of possible roman numerals, please try again." << endl;
+                cout << "Your integer is not within the range of possible roman numerals, please try again." << endl;
             }
         }
         else {
