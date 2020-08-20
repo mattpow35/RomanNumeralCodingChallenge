@@ -2,7 +2,8 @@
 Converts roman numerals to modern numbers and vice versa
 
 To compile the source code download the repo, and in your command prompt enter into the directory where the main.cpp file is found.
-run the command g++ -o codingChallenge.exe main.cpp
+run the command 
+```g++ -o codingChallenge.exe main.cpp -static-libgcc -static-libstdc++```
 
 The program allows your to choose an option of what you want to convert (roman numeral to modern number or modern number to roman numeral)
 and you can convert however many times you want until you choose the quit option. 
